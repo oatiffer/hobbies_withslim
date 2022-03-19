@@ -1,0 +1,39 @@
+{
+    "2c8a4af6-c6be-4d3e-a442-bcdfc6bade0c": {
+        "first_name": "Sofia",
+        "last_name": "Tiffer",
+        "hobbies": {
+            "soccer": "Soccer"
+        }
+    },
+    "03fffbd6-e9c0-4385-a1a4-0a307447777d": {
+        "first_name": "Axel",
+        "last_name": "Tiffer",
+        "hobbies": {
+            "js": "JavaScript"
+        }
+    },
+    "40d72761-a412-4a77-a6b4-d084b0bd17ab": {
+        "first_name": "Hosmel",
+        "last_name": "Quintana",
+        "hobbies": {
+            "php": "PHP",
+            "js": "JavaScript"
+        }
+    },
+    "20a2dcc4-4d23-4557-bfdc-ba21b4f5c74f": {
+        "first_name": "Erick",
+        "last_name": "Narvaez",
+        "hobbies": {
+            "js": "JavaScript"
+        }
+    },
+    "561d052e-15b1-4eb3-b2f9-40c6d2fa0c65": {
+        "first_name": "Axel",
+        "last_name": "Tiffer",
+        "hobbies": {
+            "soccer": "Soccer",
+            "php": "PHP"
+        }
+    }
+}

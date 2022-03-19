@@ -1,0 +1,155 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+}
+
+.page__title {
+  text-align: center;
+}
+
+.container__top {
+  width: max-content;
+  margin-inline: auto;
+  display: flex;
+  column-gap: 100px;
+}
+
+.container__top-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.container__top-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__buttons {
+  width: fit-content;
+  margin-block-start: 40px;
+  margin-inline: auto;
+}
+
+.form__button {
+  width: 80px;
+  height: 30px;
+  appearance: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+.form__button:hover {
+  background-color: lightgrey;
+}
+
+.hobbies__list-form {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.error,
+.error__hobbies {
+  align-self: flex-start;
+  padding-block-start: 0;
+  color: rgb(121, 53, 53);
+}
+
+.error__hobbies {
+  padding-block-start: 10px;
+  align-self: center;
+}
+
+.data__table {
+  margin-block-start: 40px;
+  margin-inline: auto;
+  border-collapse: collapse;
+}
+
+.table__header {
+  width: 200px;
+  text-align: center;
+  background-color: lightgrey;
+}
+
+.table__row {
+  text-align: center;
+}
+
+.table__row:nth-child(even) {
+  background-color: rgb(161, 202, 228);
+}
+
+.actions__cell {
+  width: 140px;
+}
+
+.delete__form {
+  display: inline;
+}
+
+.edit__btn {
+  color: black;
+  font-size: 14px;
+  font-family: "Manrope", sans-serif;
+  text-decoration: none;
+  margin-inline-end: 10px;
+}
+
+.delete__btn {
+  padding: 0;
+  border: none;
+  appearance: none;
+  background: none;
+  font-size: 14px;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+}
+
+.edit__btn:hover,
+.delete__btn:hover {
+  text-decoration: underline;
+  color: rgb(34, 98, 138);
+  transition: ease 0.2s;
+}
+
+.hobbies__list-table {
+  margin-block: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.back__link,
+.add__link {
+  width: 80px;
+  height: 30px;
+  padding-block: 1px;
+  padding-inline: 6px;
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: ease 0.3s;
+  background-color: rgb(239, 239, 239);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add__link {
+  width: max-content;
+  margin-inline: auto;
+}
+
+.back__link:hover,
+.add__link:hover {
+  background-color: lightgray;
+}

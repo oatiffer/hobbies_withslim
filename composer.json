@@ -1,0 +1,14 @@
+{
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.5",
+        "slim/twig-view": "^3.0",
+        "ramsey/uuid": "^4.2",
+        "league/container": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lib\\": "lib/"
+        }
+    }
+}

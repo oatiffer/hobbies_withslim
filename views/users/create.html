@@ -1,0 +1,64 @@
+{% extends 'layouts/main.html' %}
+
+{% block header %}
+<a href="/users" class="back__link"><- Back</a>
+<h1 class="page__title">Add your favorite hobbies</h1>
+{% endblock %}
+
+{% block content%}
+<form action="/users" method="post" class="form">
+    <div class="container__top">
+        <div class="container__top-left">
+            <h2 class="name__title">What's your name?</h2>
+            <label>First name:
+                <input name="first_name" type="text">
+            </label>
+            {% if errors.first_name is not empty %}
+                <span class="error">{{ errors.first_name }}</span>
+            {% endif %}
+            <label>Last name:
+                <input name="last_name" type="text">
+            </label>
+            {% if errors.last_name is not empty %}
+                <span class="error">{{ errors.last_name }}</span>
+            {% endif %}
+        </div>
+        <div class="container__top-right">
+            <h2 class="hobbies__title">What are your hobbies?</h2>
+            <ul class="hobbies__list-form">
+                <li>
+                    <label>
+                        <input type="checkbox" name="hobbies[soccer]" value="Soccer">
+                        Soccer
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="hobbies[skate]" value="Skate">
+                        Skate
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="hobbies[php]" value="PHP">
+                        PHP
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="hobbies[js]" value="JavaScript">
+                        JavaScript
+                    </label>
+                </li>
+            </ul>
+                {% if errors.hobbies is not empty %}
+                    <span class="error__hobbies">{{ errors.hobbies }}</span>
+                {% endif %}
+        </div>
+    </div>
+    <div class="container__buttons">
+        <button type="reset" class="form__button">Reset</button>
+        <button type="submit" class="form__button">Add</button>
+    </div>
+</form>
+{% endblock %}

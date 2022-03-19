@@ -1,0 +1,47 @@
+{% extends 'layouts/main.html' %}
+
+{% block header %}
+<h1 class="page__title">Hobbies list</h1>
+{% endblock %}
+
+{% block content%}
+<a href="/users/create" class="add__link">Add new user</a>
+<table class="data__table">
+    <thead>
+        <throw class="table__header-row">
+            <th class="table__header">First Name</th>
+            <th class="table__header">Last Name</th>
+            <th class="table__header">Hobbies</th>
+            <th class="table__header">Actions</th>
+        </throw>
+    </thead>
+    <tbody>
+        {% for id, user in allUsers %}
+            <tr class="table__row">
+                <td>{{ user.first_name }}</td>
+                <td>{{ user.last_name }}</td>
+                <td>
+                    <ul class="hobbies__list-table">
+                        {% if user.hobbies is not empty %}
+                            {% for hobbie in user.hobbies %}
+                                <li class="hobbies__item-table">
+                                    {{ hobbie }}
+                                </li>
+                            {% endfor %}
+                        {% else %}
+                            <li>-</li>
+                        {% endif %}
+                    </ul>
+                </td>
+                <td class="actions__cell">
+                    <a href="/users/{{ id }}/edit" class="edit__btn">Edit</a>
+                    <form action="/users/{{ id }}" method="post" class="delete__form">
+                        <input type="hidden" name="_METHOD" value="DELETE">
+                        <button class="delete__btn">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
